@@ -1,0 +1,13 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/matches"
+  to = "/.netlify/functions/matches"
+  status = 200
+
+[[redirects]]
+  from = "/api/pred"
+  to = "/.netlify/functions/pred"
+  status = 200
